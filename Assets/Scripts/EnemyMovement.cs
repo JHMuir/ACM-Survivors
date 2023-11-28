@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField] GameObject target;
+    GameObject target;
     float speed;
     // Start is called before the first frame update
     void Start()
     {
+        target = GameObject.Find("Player");
         speed = Random.Range(2f, 4f);
     }
 
