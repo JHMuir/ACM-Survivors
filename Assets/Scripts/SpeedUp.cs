@@ -11,7 +11,7 @@ public class SpeedUp : MonoBehaviour
     void Start()
     {
         playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
-        playerMovement.speed = 10;
+        playerMovement.speed += 3f;
     }
 
 }

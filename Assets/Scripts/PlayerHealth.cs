@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class PlayerHealth : MonoBehaviour
     float period = 0f;
 
     [SerializeField] GameObject gameOverCanvas;
+
+    [SerializeField] Slider healthBar;
+
+   
 
 
     public void TakeDamage(int damage)
@@ -42,6 +47,10 @@ public class PlayerHealth : MonoBehaviour
             period += UnityEngine.Time.deltaTime;
             
         }
+    }
+
+    private void Update() {
+        healthBar.value = (float)health/(float)maxHealth;
     }
 
     void GameOver()
