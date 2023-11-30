@@ -1005,6 +1005,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411226439}
   m_CullTransparentMesh: 1
+--- !u!1 &457439524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 457439525}
+  - component: {fileID: 457439526}
+  m_Layer: 0
+  m_Name: ShieldWeapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &457439525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457439524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1819250908}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &457439526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457439524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d4a0c23a4a88844d90a9c6a2ec6e607, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 6498504320990619092, guid: 1173e7b5b3220c047922afa04cabf5eb, type: 3}
+  damage: 1
+  speed: 0
+  cooldown: 3
 --- !u!1 &516339872
 GameObject:
   m_ObjectHideFlags: 0
@@ -2296,7 +2344,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 417743257
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -51247,6 +51295,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1510308343113021271, guid: a0993fdc6ae9640848ea201fabca2d12, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510308343113021271, guid: a0993fdc6ae9640848ea201fabca2d12, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1725050729
+      objectReference: {fileID: 0}
     - target: {fileID: 2842134303769035891, guid: a0993fdc6ae9640848ea201fabca2d12, type: 3}
       propertyPath: projectile
       value: 
@@ -51255,6 +51311,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 2880768074420848027, guid: a0993fdc6ae9640848ea201fabca2d12, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1725050729
+      objectReference: {fileID: 0}
     - target: {fileID: 3597359453143736313, guid: a0993fdc6ae9640848ea201fabca2d12, type: 3}
       propertyPath: m_CollisionDetection
       value: 0
