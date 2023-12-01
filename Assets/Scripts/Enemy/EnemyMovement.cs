@@ -10,7 +10,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         target = GameObject.Find("Player");
-        speed = Random.Range(2f, 4f);
+        speed = Random.Range(1f, 2f);
     }
 
     // Update is called once per frame

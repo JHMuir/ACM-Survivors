@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShieldController : WeaponController
 {
     //public GameObject hitbox;
+
     //Start is called before the first frame update
     protected override void Start()
     {
@@ -16,6 +17,7 @@ public class ShieldController : WeaponController
         base.Attack();
         GameObject spawnShield = Instantiate(weaponPrefab);
         //hitbox = Instantiate(hitbox);
+
         spawnShield.transform.position = transform.position;
         //hitbox.transform.position = transform.position;
         spawnShield.transform.parent = transform;
